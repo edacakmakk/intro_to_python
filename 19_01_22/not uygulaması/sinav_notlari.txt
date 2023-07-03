@@ -1,0 +1,5 @@
+eda çakmak:89,96,100
+cansın balsın:89,45,68
+mert hasan:23,75,41
+eren akgül:56,38,97
+sule kara:99,56,12
