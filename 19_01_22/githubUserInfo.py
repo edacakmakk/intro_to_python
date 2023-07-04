@@ -1,2 +1,2 @@
-username = "edacakmakk"
-password = "edacakmak123"
+username = "github username"
+password = "github password"
