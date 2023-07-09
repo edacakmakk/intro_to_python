@@ -55,7 +55,7 @@ from bs4 import BeautifulSoup
 
 soup = BeautifulSoup(html_doc, "html.parser")
 
-result = soup.prettify()  #bozulmuş olan html dökümanını düzeltilmiş bir şekilde konsola yazdırır
+result = soup.prettify()  #prints the corrupted html document to the console in a corrected way
 result = soup.title
 result = soup.head
 result = soup.body
@@ -64,26 +64,25 @@ result = soup.title.name
 result = soup.title.string
 
 result = soup.h1
-result = soup.h2 # bu şekilde yaptığımızda birden fazla olan h2 arasından ilk olanı eekrana yazdırır
+result = soup.h2 # When we do it this way, it prints the first one among the multiple h2 to the screen.
 result = soup.h2.name
 result = soup.h2.string
 
-result = soup.find_all("h2") #liste şeklinde olarak bütün h2 lerii getirir
+result = soup.find_all("h2") #returns all h2s in list form
 result = soup.find_all("h2")[0]
 result = soup.find_all("h2")[1]
 
 result = soup.div
-result = soup.find_all("div")[1].ul.li # en baştaki gelir
-result = soup.find_all("div")[1].ul.find_all("li")# bu şekilde hepsi liste şeklinde gelir.
+result = soup.find_all("div")[1].ul.li # the first come
+result = soup.find_all("div")[1].ul.find_all("li") # this way they all come in list form.
 
-result = soup.div.findChildren() # bu ismi kim bulmuş ya :D Neyse bu eleman div altındaki her şeyi getirir
+result = soup.div.findChildren() # who came up with this name :D Anyway, this element brings everything under the div
 
-result = soup.div.findNextSibling() # ikinci div'e geçer
-#result = soup.div.findNextSibling().findNextSibling() sonrakinin sonrakisine geçer (garip cümleler varan 1)
-##result = soup.div.findNextSibling().findNextSibling().findPreviousSibling() olarak yapasak en spn eklediğim şey bir öncekine gitmesini sağlar
+result = soup.div.findNextSibling() # switches to second div
+#result = soup.div.findNextSibling().findNextSibling() goes from the next to the next (garip cümleler varan 1)
+##result = soup.div.findNextSibling().findNextSibling().findPreviousSibling() If we do it as, the last thing I added makes it go to the previous one
 
-#https://www.crummy.com/software/BeautifulSoup/bs4/doc/ geri kalan örnekler buradan incelebilir.
-
+#https://www.crummy.com/software/BeautifulSoup/bs4/doc/ The remaining examples can be viewed here.
 result = soup.find_all("a")
 for link in result:
     print(link.get("href"))
