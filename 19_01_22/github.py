@@ -35,5 +35,5 @@ github.signIn()
 github.getFallowers()
 print()
 
-#bu projede ilerleyemiyorum çünkü takipçim yok sad :(
+#bu projede ilerleyemiyorum çünkü takipçim yok sad :( | I can't progress in this project because I have no followers sad :(
         
