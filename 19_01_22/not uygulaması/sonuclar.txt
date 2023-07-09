@@ -2,4 +2,4 @@ eda çakmak: AA
 cansın balsın: DC
 mert hasan: FF
 eren akgül: DD
-sule kara: FD
+name surname: FD
