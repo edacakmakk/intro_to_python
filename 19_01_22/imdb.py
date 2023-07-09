@@ -12,7 +12,7 @@ count= 1
 
 for tr in list:
     title = tr.find("td", {"class":"titleColumn"}).find("a").text
-    year = tr.find("td", {"class":"titleColumn"}).find("span").text.strip("()") # strip metodu silmek istediğimiz şeyleri siler. örnekte başında ve sonunda parantes vardı onları sildik.
+    year = tr.find("td", {"class":"titleColumn"}).find("span").text.strip("()") # The strip method deletes the things we want to delete. In the example, there were parentheses at the beginning and at the end, and we deleted them.
     rating = tr.find("td", {"class":"ratingColumn imdbRating"}).find("strong").text
 
     print(f"{count}- film: {title.ljust(50)} yıl: {year} değerlendirme: {rating}")
